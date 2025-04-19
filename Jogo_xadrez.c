@@ -2,14 +2,14 @@
 
 // Torre: movimenta recursivamente para a direita
 void moverTorre(int casas) {
-    if (casas == 0) return;
+    if (casas == 0) return; // Se não houver mais casas, para a recursão
     printf("Direita\n");
     moverTorre(casas - 1);
 }
 
 // Bispo (recursivo): movimenta para cima e esquerda
 void moverBispoRecursivo(int casas) {
-    if (casas == 0) return;
+    if (casas == 0) return; // Se não houver mais casas, para a recursão
     printf("Cima\n");
     printf("Esquerda\n");
     moverBispoRecursivo(casas - 1);
@@ -30,7 +30,7 @@ void moverBispoLoops(int casas) {
 
 // Rainha: esquerda com recursão
 void moverRainhaEsquerda(int casas) {
-    if (casas == 0) return;
+    if (casas == 0) return; // Se não houver mais casas, para a recursão
     if (casas == 2) {
         moverRainhaEsquerda(casas - 1); // pula a casa 2
         return;
@@ -42,7 +42,7 @@ void moverRainhaEsquerda(int casas) {
 
 // Rainha: cima com recursão
 void moverRainhaCima(int casas) {
-    if (casas == 0) return;
+    if (casas == 0) return; // Se não houver mais casas, para a recursão
     printf("Cima\n");
     moverRainhaCima(casas - 1);
 }
